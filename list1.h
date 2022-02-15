@@ -11,6 +11,7 @@ class Lilist {
         Lilist() {head = NULL;}
         void add(std::string item);
         void show();
+        Node* search(std::string target);
     
     private:
         Node *head;
@@ -37,4 +38,14 @@ void Lilist::add(std::string item) {
 void Lilist::show() {
     for(Node *tmp = head; tmp != NULL; tmp = tmp -> next)
         std::cout << tmp -> data << "  ";
+}
+
+Node* Lilist::search(std::string target) {
+    Node* cursor = head;
+
+    while (cursor != NULL && cursor -> data != target) {
+        cursor = cursor -> next;
+    }
+
+    return cursor;
 }

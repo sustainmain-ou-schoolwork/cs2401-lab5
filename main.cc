@@ -14,16 +14,17 @@ int main() {
     L1.add("Bojian");
     cout << "Now showing list One:\n";
     L1.show();
+    cout << endl;
     
     // END OF PART ONE
     // The code from here down requires that you add two functions to
     // the class
-    /*
+    
     cout << "Enter a name to search:";
     cin >> target;
     if (L1.search(target) != NULL)
         cout << "That name is stored at address:" << L1.search(target) << endl;
-    else {
+    /*else {
         cout << "That name is not in the list.\n";
         L1.move_front_to_back();
         L1.move_front_to_back();
