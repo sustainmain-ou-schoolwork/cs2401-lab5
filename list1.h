@@ -7,10 +7,13 @@ struct Node {
 };
 
 class Lilist {
-    public:Lilist() {head = NULL;}
-    void add(std::string item);
-    void show();
-    private:Node *head;
+    public:
+        Lilist() {head = NULL;}
+        void add(std::string item);
+        void show();
+    
+    private:
+        Node *head;
 };
 
 void Lilist::add(std::string item) {
